@@ -1,0 +1,74 @@
+
+html {
+    background-color: #201533
+    
+}
+
+.video{
+    position: absolute;
+    margin-left: 42vw;
+
+    transform: scale(108%,108%);
+
+}
+
+.wrapper{
+    position: absolute;
+
+    font-family: 'Montserrat', sans-serif;
+    width: 80vw;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-top: 10px;
+    text-align: left;
+    
+}
+
+.column{
+    display: flex;
+    float: left;
+    
+}
+
+.button{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #0098db;
+    width: 100px;
+    height: 60px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    
+    
+}
+.button:hover{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #1e579c;
+    width: 100px;
+    height: 60px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+.h3{
+    text-align: center;
+    
+
+}
+
+.gamecontainer{
+    padding-left: 150px;
+    padding-top: 600px;
+}
+
+.gamesall{
+    display: flex;
+    flex-direction: column-reverse;
+}

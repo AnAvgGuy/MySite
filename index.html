@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+   
+    <script>
+
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+
+          if (shown == "wrapper2"){
+            document.getElementById("game").style.display='block';
+          }
+          else{
+            document.getElementById("game").style.display='none';
+          }
+
+          return false;
+        }
+        
+    </script>
+
+</head>
+
+<body onload="return show('wrapper1', 'wrapper2')">
+
+    
+
+    <div class="wrapper" id="wrapper1">
+
+        <video class="video" autoplay muted loop id="myVideo">
+            <source src="videooy.mp4" type="video/mp4">
+        </video>
+
+
+        <h1 style="color: #ffffff;">Home sweet home</h1>
+
+        <div class="column" id="page1">
+            <button class="button" type="button" onclick="return show('wrapper2','wrapper1');">
+                <h2>Games</h2>
+            </button>
+
+            <button class="button" type="button" onclick="return show('wrapper3','wrapper1');">
+                <h2>Other things</h2>
+            </button>
+    
+        </div>
+    
+
+    </div>
+    
+    
+    <div class="gamesall">
+
+        <div class="gamecontainer" id="game">
+            <iframe frameborder="0" src="https://itch.io/embed/1910293?linkback=true" width="552" height="167" style="transform: translateY(-400px);">
+                <a href="https://averageperson22.itch.io/no-title">Gun man by AveragePerson22</a>
+            </iframe>
+        </div>
+        
+
+        
+        <div class="wrapper" id="wrapper2" style="display: none">
+            
+            <h1 style="color: #ffffff;">Games I made</h1>
+
+
+            
+            <div class="column" id="gamepage1">
+
+
+                <button class="button" type="button" onclick="return show('wrapper1','wrapper2');">
+                    <h2>Home</h2>
+                </button>
+
+
+        
+            </div>
+
+            
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="wrapper" id="wrapper3" style="display: none">
+        <h1 style="color: #ffffff;">Other things, I don´t know yet</h1>
+
+        <div class="column" id="page3">
+
+
+            <button class="button" type="button" onclick="return show('wrapper1','wrapper3');">
+                <h2>Home</h2>
+            </button>
+    
+        </div>
+
+
+    </div>
+
+
+
+
+    
+    
+    
+</body>
+
+</html>
